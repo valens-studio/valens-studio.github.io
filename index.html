@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Valens Studio</title>
+<meta name="description" content="Valens Studio, éditeur de NeuroZap : 5 minutes par jour pour muscler ton cerveau.">
+<style>
+  :root{--bleu:#2F45C6;--encre:#0E1B3D;--gris:#55607A;--fond:#EAF4FF;--carte:#fff;--trait:#CFE0F5;--jaune:#FFC93D}
+  @media (prefers-color-scheme:dark){:root{--encre:#EEF2FF;--gris:#A9B4CF;--fond:#0E1120;--carte:#171C33;--trait:#2A3358}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--fond);color:var(--encre);font:17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  main{max-width:640px;margin:0 auto;padding:40px 16px 56px}
+  .studio{font-weight:800;letter-spacing:-.01em;font-size:18px;margin:0 0 32px}
+  .carte{background:var(--carte);border:2px solid var(--trait);border-radius:24px;padding:24px}
+  .tete{display:flex;gap:16px;align-items:center;margin-bottom:16px}
+  .tete img{width:84px;height:84px;border-radius:20px;flex:none}
+  h1{font-size:26px;line-height:1.15;letter-spacing:-.02em;margin:0}
+  .sous{color:var(--gris);margin:4px 0 0;font-size:16px}
+  p{margin:0 0 14px}
+  .bouton{display:inline-block;background:var(--jaune);color:#2A1E00;font-weight:800;text-decoration:none;border-radius:14px;padding:12px 18px}
+  .note{color:var(--gris);font-size:15px;margin:12px 0 0}
+  h2{font-size:18px;margin:32px 0 8px}
+  ul{list-style:none;margin:0;padding:0}
+  li{margin:0 0 6px}
+  a{color:var(--bleu)}
+  @media (prefers-color-scheme:dark){a:not(.bouton){color:#9DB0FF}}
+  footer{color:var(--gris);font-size:14px;margin-top:32px;border-top:2px solid var(--trait);padding-top:16px}
+</style>
+</head>
+<body>
+<main>
+  <p class="studio">Valens Studio</p>
+
+  <section class="carte">
+    <div class="tete">
+      <img src="neurozap.png" alt="Icône de NeuroZap : Étincelle, une petite flamme souriante">
+      <div>
+        <h1>NeuroZap</h1>
+        <p class="sous">Pense d’abord, demande après</p>
+      </div>
+    </div>
+    <p>5 minutes par jour pour garder l’esprit vif : biais cognitifs, logique, calcul mental, mémoire, culture générale et élocution. Avec Étincelle, des niveaux, le défi du jour et des duels entre amis.</p>
+    <a class="bouton" href="https://apps.apple.com/fr/app/neurozap-muscle-ton-cerveau/id6822686302">Télécharger sur l’App Store</a>
+    <p class="note">Bientôt sur Google Play.</p>
+  </section>
+
+  <h2>Aide et informations</h2>
+  <ul>
+    <li><a href="https://sites.google.com/view/neurozap-confidentialite/assistance">Assistance</a></li>
+    <li><a href="https://sites.google.com/view/neurozap-confidentialite/accueil">Politique de confidentialité</a></li>
+    <li><a href="mailto:balandtimes.valens@gmail.com">balandtimes.valens@gmail.com</a></li>
+  </ul>
+
+  <footer>
+    Éditeur : Mathieu Valentim (Valens Studio). Hébergement : GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.
+  </footer>
+</main>
+</body>
+</html>
