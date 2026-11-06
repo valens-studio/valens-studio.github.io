@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NeuroZap : Muscle ton cerveau</title>
+<meta name="description" content="5 minutes par jour pour muscler ton cerveau : biais cognitifs, logique, mémoire, culture et défis entre amis. Sur iPhone et Android.">
+<link rel="icon" href="../neurozap.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Valens Studio">
+<meta property="og:title" content="NeuroZap : Muscle ton cerveau">
+<meta property="og:description" content="5 minutes par jour pour muscler ton cerveau : biais cognitifs, logique, mémoire, culture et défis entre amis. Sur iPhone et Android.">
+<meta property="og:url" content="https://valens-studio.github.io/neurozap/">
+<meta property="og:image" content="https://valens-studio.github.io/apercu.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{--bleu:#2F45C6;--encre:#0E1B3D;--gris:#55607A;--fond:#EAF4FF;--carte:#fff;--trait:#CFE0F5;--jaune:#FFC93D}
+  @media (prefers-color-scheme:dark){:root{--encre:#EEF2FF;--gris:#A9B4CF;--fond:#0E1120;--carte:#171C33;--trait:#2A3358}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--fond);color:var(--encre);font:17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  main{max-width:480px;margin:0 auto;padding:40px 16px;text-align:center}
+  img{width:120px;height:120px;border-radius:28px}
+  h1{font-size:32px;line-height:1.1;letter-spacing:-.02em;margin:16px 0 4px}
+  .sous{color:var(--gris);font-weight:600;margin:0 0 16px}
+  .texte{margin:0 0 24px}
+  #stores{display:flex;flex-direction:column;gap:12px}
+  a.store{display:block;background:var(--carte);color:var(--encre);border:2px solid var(--trait);font-weight:800;text-decoration:none;border-radius:16px;padding:16px}
+  a.store:first-child{background:var(--jaune);border-color:var(--jaune);color:#2A1E00}
+  .note{color:var(--gris);font-size:15px;margin:16px 0 0}
+  footer{color:var(--gris);font-size:14px;margin-top:32px}
+  footer a{color:inherit}
+</style>
+</head>
+<body>
+<main>
+  <img src="../neurozap.png" alt="Étincelle, la mascotte de NeuroZap">
+  <h1>NeuroZap</h1>
+  <p class="sous">Muscle ton cerveau</p>
+  <p class="texte">5 minutes par jour pour entraîner ton esprit : biais cognitifs, logique, mémoire, culture et élocution. Avec des niveaux, le défi du jour et des duels entre amis.</p>
+  <div id="stores">
+    <a class="store" id="ios" href="https://apps.apple.com/fr/app/neurozap-muscle-ton-cerveau/id6822686302">Télécharger sur l’App Store (iPhone)</a>
+    <a class="store" id="android" href="https://play.google.com/store/apps/details?id=com.neurozap.app">Télécharger sur Google Play (Android)</a>
+  </div>
+  <p class="note">Gratuit, avec un abonnement facultatif.</p>
+  <footer>Une application <a href="../">Valens Studio</a></footer>
+</main>
+<script>
+  // Sur un téléphone Android, Google Play passe en premier.
+  if (/android/i.test(navigator.userAgent)) {
+    const zone = document.getElementById("stores");
+    zone.prepend(document.getElementById("android"));
+  }
+</script>
+</body>
+</html>
